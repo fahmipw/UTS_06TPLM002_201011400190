@@ -122,15 +122,22 @@ class ProductListScreen extends StatelessWidget {
                           children: [
                             Text(
                               product.name,
-                              style: const TextStyle(fontSize: 20.0),
+                              style: const TextStyle(fontSize: 30.0),
                             ),
                             const SizedBox(height: 8.0),
-                            Text(product.description),
-                            const SizedBox(height: 8.0),
+                            Text(
+                            product.description,
+                            style: const TextStyle(
+                              fontSize: 25.0,
+                              color: Colors.black54,
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+
                             Text(
                               '${product.price}',
                               style: const TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 35.0,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
