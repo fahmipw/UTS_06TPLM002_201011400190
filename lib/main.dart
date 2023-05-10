@@ -75,9 +75,12 @@ class ProductListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Fahmi Perdana Wicaksono"),
-      ),
+    appBar: AppBar(
+    title: Text(
+    "Fahmi Perdana Wicaksono",
+    style: TextStyle(fontSize: 50.0),
+    ),
+    ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -87,12 +90,12 @@ class ProductListScreen extends StatelessWidget {
     children: [
       Text(
         "Shoes",
-        style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+        style: TextStyle(fontSize: 85.0, fontWeight: FontWeight.bold),
       ),
       Spacer(),
       CircleAvatar(
-        child: Icon(Icons.person, size: 40.0),
-        radius: 25.0,
+        child: Icon(Icons.person, size: 90.0),
+        radius: 50.0,
         backgroundColor: Colors.lightBlueAccent,
       ),
     ],
